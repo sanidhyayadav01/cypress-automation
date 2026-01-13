@@ -10,14 +10,14 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                sh 'npm install'
+                bat 'npm install'
             }
         }
 
         stage('Run Cypress Test') {
             steps {
                 // Run a specific feature file if using Cypress Cucumber
-                sh 'npx cypress run --spec "cypress/e2e/cucumber-bdd-tests/codenbox_practice.feature"'
+                bat 'npx cypress run --spec "cypress/e2e/sample.feature"'
             }
         }
     }
