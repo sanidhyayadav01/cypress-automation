@@ -16,8 +16,7 @@ pipeline {
 
         stage('Run Cypress Test') {
             steps {
-                // Run a specific feature file if using Cypress Cucumber
-                bat 'npx cypress run --spec "cypress\e2e\cucumber-bdd-tests\codenbox_practice.feature"'
+                bat 'npx cypress run --spec "cypress/e2e/cucumber-bdd-tests/codenbox_practice.feature"'
             }
         }
     }
