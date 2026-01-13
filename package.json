@@ -1,0 +1,38 @@
+{
+  "name": "cypressproject1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "rimraf ./cypress/reports/allure-results/* --glob",
+    "cy:run": "cypress run",
+    "report:allure": "allure generate ./cypress/reports/allure-results --clean -o ./cypress/reports/allure-report",
+    "open:allure": "allure open ./cypress/reports/allure-report",
+    "test": "npm run pretest && npm run cy:run && npm run report:allure",
+    "hello": "echo Hello World, this came from package.json"
+  },
+  "keywords": [
+    "cypress",
+    "bdd",
+    "cucumber",
+    "allure",
+    "automation-testing"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cypress": "^15.8.1",
+    "cypress-downloadfile": "^1.2.4",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^4.4.1",
+    "mochawesome-report-generator": "^6.3.2",
+    "rimraf": "^6.1.2"
+  },
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^24.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.8",
+    "@shelex/cypress-allure-plugin": "^2.41.2",
+    "allure-commandline": "^2.36.0",
+    "cypress-file-upload": "^5.0.8"
+  }
+}

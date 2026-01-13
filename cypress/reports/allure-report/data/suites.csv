@@ -1,0 +1,2 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","5355","Open the Cypress example page and check the title","","2026-01-07","passed","2026-01-07","","Navigate and check page title","",""

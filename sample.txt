@@ -1,0 +1,2 @@
+Hello, this came from writeFile function
+I am learning cypress with Automation Step By Step
